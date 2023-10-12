@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>checkpointHTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to my first website</h1>
+        <h1 id="main-title">Welcome to my first website</h1>
     <nav>
         <ul type="square">
             <li><a href="#gotoHome">Home</a></li>
@@ -20,36 +21,39 @@
         <!--Home section-->
         <a name="gotoHome">
         <section>
-            <h2><font color="RED">Home:</font></h2>
-            <p>I'm safa boukhris living in Bekalta governorate Monastir.</p>
+            <h2>Home:</h2>
+            <p class="paragraph">I'm <span class="spanidentifiant" >Safa Boukhris</span> living in Bekalta governorate Monastir.</p>
         </section>
         </a>
         <!--About section-->
         <a name="gotoAbout">
         <section>
-            <h2><font color="RED">About:</font></h2>
-            <p>I'm <b>Safa</b> a student in <b>GoMyCode</b> sousse, i finished my studies in FSM where i obtained my master's degree in organic chemisty and now i'm seeking for a job.And this is my university's career: </p>
-        <nav>
-            <ul type="disc">
+            <h2>About:</h2>
+            <p class="paragraph">I'm <span class="spanidentifiant">Safa</span> a student in<span class="spanidentifiant">GoMyCode</span> sousse, i finished my studies in FSM where i obtained my master's degree in organic chemisty and now i'm seeking for a job.And this is my university's career: </p>
+            <ul  class="list1" type="disc">
                 <li>baccalaureate in experimental sciences</li>
                 <li>bachelor degree in chemistry</li>
                 <li>master's degree in organic chemistry</li>
             </ul>
-        </nav>
         </section>
         </a>
         <!--Work section-->
         <a name="gotoWork">
         <section>
-            <h2><font color="red">Work:</font></h2>
-            <p>In my proffesionel career, i have worked in a labotary of synthesis where i was able to synthesis a new phtallocyanine(molecule)and here is a photo to help you understand</p>
+            <h2>Work:</h2>
+            <div class="imagecenter">
+                <img class="imageflotante" widht="120" height="120" title="molecule" alt="phtallocyanine" src="C:\Users\Asus\Desktop\metallo.jpg"/>
+                <p class="paragraph">In my proffesionel career, i have worked in a labotary of synthesis where i was able to synthesis a new phtallocyanine(molecule)and here is a photo to help you understand</p>
+                <p class="paragraph">For more information about my career, have a look at this table bellow:</p>
+            </div>
+            
+            
             <!--phtallocyaninemoleculephoto-->
-            <img widht="120" height="120" title="molecule" alt="phtallocyanine" src="C:\Users\Asus\Desktop\metallo.jpg"/>
-            <p>For more information about my career, have a look at this table bellow:</p>
-            <table border="1">
-                <tr>
-                    <th><font color="orange">Career</font></th>
-                    <th><font color="orange">Place</font></th>
+            
+            <table>
+                <tr class="row1">
+                    <th>Career</th>
+                    <th>Place</th>
                 </tr>
                 <tr>
                     <td>six month PFE intership</td>
@@ -60,22 +64,22 @@
                     <td> organic synthesis laboratory</td>
                 </tr>
             </table>
-            <p>In this vidéo bellow you will find a quick information about the organic synthesis</p>
+            <p class="paragraph">In this vidéo bellow you will find a quick information about the organic synthesis</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/k5L-gGmQbPc?si=X1Pwy9BhYTzw03Ua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
         </a>
         <!--CV section-->
         <a name="gotoResume">
         <section>
-            <h2><font color="red">Resume:</font></h2>
-            <p>have a quich look at my cv</p>
-            <iframe  width="500" height="315" src="file:///C:/Users/Asus/Desktop/safaa-cv-gomycode%20pdf.pdf"></iframe>
+            <h2>Resume:</h2>
+            <p class="paragraph">have a quich look at my cv</p>
+            <iframe  width="250" height="250" src="file:///C:/Users/Asus/Desktop/safaa-cv-gomycode%20pdf.pdf"></iframe>
         </section>
         </a>
         <!--contact me section-->
         <a name="gotoContact">
         <section>
-            <h2><font color="red">Contact me:</font></h2>
+            <h2>Contact me:</h2>
             <form>
                 <label><b>Name</b></label>
                 <input type="text"  name="first name" value="safa boukhris">
@@ -98,7 +102,7 @@
         </a>
     </main>
     <footer>
-        <p><i>Please don't hesitate to contact me, i'm at your disposal</i></p>
+        <p class="footertype"><i>Please don't hesitate to contact me, i'm at your disposal</i></p>
     </footer>     
 </body>
 </html>
